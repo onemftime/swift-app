@@ -12,24 +12,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var WorldLabel: UILabel!
     
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
     var buttonCount = 0
     
     @IBAction func pushMeButtonPressed(_ sender: Any) {
         
-        WorldLabel.text = "sup partner!"
-        buttonCount += 1
-        print (buttonCount)
-        if buttonCount >= 20 {
-            WorldLabel.text = "you pushed the button too many times"
+        WorldLabel.text = "Answer: \(Double(text1.text!)! + Double (text2.text!)!)"
         }
-    }
-    
-    
-    @IBAction func newButtonPressed(_ sender: Any) {
-        
-        WorldLabel.text = "Buttons are cool"
-        
-    }
     
     
     override func viewDidLoad() {
