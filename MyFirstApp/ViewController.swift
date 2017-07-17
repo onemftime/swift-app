@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         WorldLabel.text = "sup partner!"
         buttonCount += 1
         print (buttonCount)
-        if buttonCount >= 10 {
+        if buttonCount >= 20 {
             WorldLabel.text = "you pushed the button too many times"
         }
     }
