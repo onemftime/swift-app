@@ -20,26 +20,21 @@ class ViewController: UIViewController {
     
     @IBAction func pushMeButtonPressed(_ sender: Any) {
         
-        let addition = true
-        
-        if addition {
-            WorldLabel.text = "Answer: \(Double(text1.text!)! + Double (text2.text!)!)"
-        }else {
-            WorldLabel.text = "Answer: \(Double(text1.text!)! - Double (text2.text!)!)"        }
-    }
+        WorldLabel.text = "Answer: \(Double(text1.text!)! + Double (text2.text!)!)"
+        }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-    }
     
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
+
+
 }
 
